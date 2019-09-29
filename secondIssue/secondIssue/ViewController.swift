@@ -17,23 +17,23 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func buttonChangeColour(_ sender: Any) {
-        if textEnterField.text == "red"{
+        if textEnterField.text?.lowercased() == "red" || textEnterField.text?.lowercased() == "rod" || textEnterField.text?.lowercased() == "rud"{
             view.backgroundColor = UIColor.red
             theLabelText.text = "Red"
-        }else if textEnterField.text == "black"{
+        }else if textEnterField.text?.lowercased() == "black"{
             view.backgroundColor = UIColor.black
             theLabelText.text = "Black"
             theLabelText.textColor = UIColor.white
-        }else if textEnterField.text == "green"{
+        }else if textEnterField.text?.lowercased() == "green"{
             view.backgroundColor = UIColor.green
             theLabelText.text = "Green"
-        }else if textEnterField.text == "blue"{
+        }else if textEnterField.text?.lowercased() == "blue"{
             view.backgroundColor = UIColor.blue
             theLabelText.text = "Blue"
-        }else if textEnterField.text == "yellow"{
+        }else if textEnterField.text?.lowercased() == "yellow"{
             view.backgroundColor = UIColor.yellow
             theLabelText.text = "Yellow"
-        }else if textEnterField.text == "orange"{
+        }else if textEnterField.text?.lowercased() == "orange"{
             view.backgroundColor = UIColor.orange
             theLabelText.text = "Orange"
         }else if textEnterField.text == ""{

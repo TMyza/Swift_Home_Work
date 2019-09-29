@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TemperatureConvertor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature Convertor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIU-eT-Lha">
+                                <rect key="frame" x="87.666666666666686" y="44" width="239" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celsius:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyV-71-Scj">
+                                <rect key="frame" x="59" y="94" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fahrenheit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XG-t1-OZN">
+                                <rect key="frame" x="33" y="144" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the value here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSW-k5-G06">
+                                <rect key="frame" x="127.00000000000001" y="81" width="157.33333333333337" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the value here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UPV-1E-fhu">
+                                <rect key="frame" x="127.00000000000001" y="131" width="157.33333333333337" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRl-Y4-0Vp">
+                                <rect key="frame" x="298.33333333333331" y="135" width="69" height="30"/>
+                                <state key="normal" title="Fah to Cel"/>
+                                <connections>
+                                    <action selector="fahrToCel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRT-nL-Hbr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converted Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-Gn-Q8b">
+                                <rect key="frame" x="143.66666666666666" y="212" width="126.66666666666666" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLW-JV-bEQ">
+                                <rect key="frame" x="298.33333333333331" y="85" width="69" height="30"/>
+                                <state key="normal" title="Cel to Fah"/>
+                                <connections>
+                                    <action selector="celToFahr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CO4-Yh-PXf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UPV-1E-fhu" firstAttribute="top" secondItem="sSW-k5-G06" secondAttribute="bottom" constant="16" id="6c5-cN-XWJ"/>
+                            <constraint firstItem="QLW-JV-bEQ" firstAttribute="top" secondItem="YIU-eT-Lha" secondAttribute="bottom" constant="12" id="8Pf-Cx-buP"/>
+                            <constraint firstItem="XRl-Y4-0Vp" firstAttribute="top" secondItem="QLW-JV-bEQ" secondAttribute="bottom" constant="20" id="9we-q7-qMj"/>
+                            <constraint firstItem="1XG-t1-OZN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="JP7-nx-R6e"/>
+                            <constraint firstItem="UPV-1E-fhu" firstAttribute="leading" secondItem="1XG-t1-OZN" secondAttribute="trailing" constant="8" id="LB4-d3-YTt"/>
+                            <constraint firstItem="QLW-JV-bEQ" firstAttribute="leading" secondItem="sSW-k5-G06" secondAttribute="trailing" constant="14" id="NLL-qs-z2Z"/>
+                            <constraint firstItem="kyV-71-Scj" firstAttribute="top" secondItem="YIU-eT-Lha" secondAttribute="bottom" constant="21" id="NS1-ub-t4F"/>
+                            <constraint firstItem="sSW-k5-G06" firstAttribute="leading" secondItem="kyV-71-Scj" secondAttribute="trailing" constant="8" id="S56-1e-xaf"/>
+                            <constraint firstItem="YIU-eT-Lha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WMe-KC-9dy"/>
+                            <constraint firstItem="sSW-k5-G06" firstAttribute="top" secondItem="YIU-eT-Lha" secondAttribute="bottom" constant="8" id="bDc-Gr-Gcc"/>
+                            <constraint firstItem="kyV-71-Scj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="fAe-Ud-B6n"/>
+                            <constraint firstItem="YIU-eT-Lha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="gHj-db-aHS"/>
+                            <constraint firstItem="bDa-Gn-Q8b" firstAttribute="top" secondItem="UPV-1E-fhu" secondAttribute="bottom" constant="47" id="gxn-TE-up1"/>
+                            <constraint firstItem="1XG-t1-OZN" firstAttribute="top" secondItem="kyV-71-Scj" secondAttribute="bottom" constant="29" id="nxO-9X-8Vf"/>
+                            <constraint firstItem="XRl-Y4-0Vp" firstAttribute="leading" secondItem="UPV-1E-fhu" secondAttribute="trailing" constant="14" id="puQ-sg-Fe5"/>
+                            <constraint firstItem="bDa-Gn-Q8b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s1d-Fi-LZm"/>
+                            <constraint firstItem="1XG-t1-OZN" firstAttribute="top" secondItem="kyV-71-Scj" secondAttribute="bottom" constant="29" id="wcY-5g-BmF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="celToFahr" destination="QLW-JV-bEQ" id="Krn-ff-VoK"/>
+                        <outlet property="celsField" destination="sSW-k5-G06" id="C8P-cx-HtS"/>
+                        <outlet property="fahrField" destination="UPV-1E-fhu" id="C8F-fo-b18"/>
+                        <outlet property="theConvertLable" destination="bDa-Gn-Q8b" id="WJ4-Be-ol7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
