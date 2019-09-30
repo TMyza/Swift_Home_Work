@@ -25,12 +25,14 @@ class ViewController: UIViewController {
         let textfieldCel: Int? = Int(celsField.text!)
         if textfieldCel == 0 {
             let fahr = (9/5 * textfieldCel!) + 32
-            theConvertLable.text = "\(fahr) Fahrenheit."
+            let fahr_conv = NSString(format:"%.1f", fahr)
+            theConvertLable.text = "\(fahr_conv) Fahrenheit."
             view.backgroundColor = UIColor.green
         }else {
             let textfieldCel: Float? = Float(celsField.text!)
             let fahr = (9/5 * textfieldCel!) + 32
-            theConvertLable.text = "\(fahr) Fahrenheit."
+            let fahr_conv = NSString(format:"%.1f", fahr)
+            theConvertLable.text = "\(fahr_conv) Fahrenheit."
             view.backgroundColor = UIColor.green
         }
     }
